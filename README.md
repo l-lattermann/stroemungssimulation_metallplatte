@@ -43,13 +43,13 @@ Dies ist eine diskretisierte Form der **Wärmeleitungsgleichung** mit Konvektion
 
 
 
-### 2. Geschwindigkeitsberechnung für \(U[j][i]\)
+### 2. Geschwindigkeitsberechnung x-Komponente der Geschwindigkeit
 ```cpp
 U[j][i]= (U[j][i]*(U[j-1][i]/Dl) - V[j][i]*(U[j][i+1]/Dl)
           + (nu*(U[j][i-1] + U[j][i+1])/(Dl*Dl)) + g*((T[j][i]-t_raum)/t_raum))
           /((U[j][i]/Dl)-(V[j][i]/Dl)+ (2*nu/(Dl*Dl)));
 ```
-Dies ist eine diskretisierte Form der **Navier-Stokes-Gleichung für die \(x\)-Richtung**:
+Dies ist eine diskretisierte Form der **Navier-Stokes-Gleichung für die x-Richtung**:
 
 <img src="readme_images/v.png" alt="Description" height="55" />
 <br>
@@ -63,20 +63,24 @@ Dies ist eine diskretisierte Form der **Navier-Stokes-Gleichung für die \(x\)-R
   - g: Gravitationsbeschleunigung.
 
 <br>
-<div align="center">
-  <img src="plots/V-Heatmap.png" alt="Image 1 Description" width="400">
-  <img src="plots/U-Heatmap.png" alt="Image 2 Description" width="400">
-</div>
+<div style="text-align: center;">
+    <img src="plots/U-Heatmap.png" alt="Description" height="400" style="vertical-align: middle;">
 </div>
 <br>
 
 ---
 
-### 3. Geschwindigkeitsberechnung für \(V[j][i+1]\)
+### 3. Geschwindigkeitsberechnung für  die y-Komponente der Geschwindigkeit
 ```cpp
 V[j][i+1] = V[j][i] + U[j-1][i] - U[j][i];
 ```
-Dies ist eine vereinfachte iterative Formel für die y-Komponente der Geschwindigkeit, basierend auf der Balance zwischen U- und V-Flüssen.
+Das ist eine vereinfachte iterative Formel für die y-Komponente der Geschwindigkeit, basierend auf der Balance zwischen U- und V-Flüssen.
+
+<br>
+<div style="text-align: center;">
+    <img src="plots/V-Heatmap.png" alt="Description" height="400" style="vertical-align: middle;">
+</div>
+<br>
 
 ---
 
