@@ -63,8 +63,10 @@ Dies ist eine diskretisierte Form der **Navier-Stokes-Gleichung für die \(x\)-R
   - g: Gravitationsbeschleunigung.
 
 <br>
-<div style="text-align: center;">
-    <img src="plots/U-Heatmap.png" alt="Description" height="400" style="vertical-align: middle;">
+<div align="center">
+  <img src="plots/V-Heatmap.png" alt="Image 1 Description" width="400">
+  <img src="plots/U-Heatmap.png" alt="Image 2 Description" width="400">
+</div>
 </div>
 <br>
 
