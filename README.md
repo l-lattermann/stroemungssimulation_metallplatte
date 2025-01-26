@@ -64,7 +64,7 @@ Dies ist eine diskretisierte Form der **Navier-Stokes-Gleichung für die \(x\)-R
 
 <br>
 <div style="text-align: center;">
-    <img src="plots/v-Heatmap.png" alt="Description" height="400" style="vertical-align: middle;">
+    <img src="plots/U-Heatmap.png" alt="Description" height="400" style="vertical-align: middle;">
 </div>
 <br>
 
