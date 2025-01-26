@@ -24,7 +24,6 @@ Dies ist eine diskretisierte Form der **Wärmeleitungsgleichung** mit Konvektion
 
 <img src="readme_images/t.png" alt="Description" height="55" />
 <br>
-<br>
 
 - **Parameter:**
   - U[j][i], V[j][i]\: Geschwindigkeitskomponenten in x- und y-Richtung.
@@ -52,7 +51,6 @@ U[j][i]= (U[j][i]*(U[j-1][i]/Dl) - V[j][i]*(U[j][i+1]/Dl)
 Dies ist eine diskretisierte Form der **Navier-Stokes-Gleichung für die x-Richtung**:
 
 <img src="readme_images/v.png" alt="Description" height="55" />
-<br>
 <br>
 
 - **Terme:**
